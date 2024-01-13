@@ -11,7 +11,8 @@ return {
 		persist_size = true,
 		direction = "vertical",
 	},
-	config = function(_, opts)
+
+  config = function(_, opts)
 		require("toggleterm").setup(opts)
 		local Terminal = require("toggleterm.terminal").Terminal
 		local lazygit = Terminal:new({
