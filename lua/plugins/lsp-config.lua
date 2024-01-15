@@ -136,6 +136,7 @@ return {
           yaml = { prettier },
           markdown = { prettier },
           html = { prettier },
+          htmldjango = { python },
           go = { go },
           rust = { rust },
           python = { python },
@@ -145,7 +146,7 @@ return {
           require("formatter.filetypes.any").remove_trailing_whitespace,
         },
       })
-      vim.keymap.set("n", "<leader>fF", [[<CMD> Format<CR>]])
+      vim.keymap.set("n", "<leader>gf", [[<CMD> Format<CR>]])
       vim.keymap.set("n", "<leader>fw", [[<CMD> FormatWrite<CR>]])
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
